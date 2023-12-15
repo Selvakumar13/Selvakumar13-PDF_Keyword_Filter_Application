@@ -12,7 +12,6 @@ start = timer()
 base64_image = b"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"
 
 class PDFSearchApp(QMainWindow):
-
     def __init__(self):
         super().__init__()
         self.init_ui()
@@ -43,6 +42,7 @@ class PDFSearchApp(QMainWindow):
         self.start_date_edit = QDateEdit(self.date_widget)
         self.start_date_edit.setDisplayFormat("yyyy-MM-dd")
         self.start_date_edit.setCalendarPopup(True)
+        self.start_date_edit.setDate(QDate.currentDate())
         date_layout.addWidget(self.start_date_edit)
 
         # "To" label and end date
@@ -122,7 +122,7 @@ class PDFSearchApp(QMainWindow):
         self.path_textbox.setText(selected_path)
 
     def start_search(self):
-        c = 0
+        c=0
         keyword = self.keyword_textbox.text()
         folder_path = self.path_textbox.text()
 
@@ -132,6 +132,9 @@ class PDFSearchApp(QMainWindow):
             return
 
         self.result_textbox.clear()
+        self.result_textbox.append("Please wait. Search in progress...\n")
+        self.result_textbox.repaint()
+        QApplication.processEvents()
 
         pdf_files = [f for f in os.listdir(folder_path) if f.endswith('.pdf')]
         total_files = len(pdf_files)
@@ -149,8 +152,6 @@ class PDFSearchApp(QMainWindow):
             end_date = self.end_date_edit.date().toPython()
             results_df, files_read, excel_path = process_local_pdf_files(folder_path, keyword, start_date, end_date)
 
-        self.result_textbox.append(f"Searching in {total_files} PDF files. Please wait...\n")
-
         for i, pdf_file in enumerate(pdf_files, start=1):
             file_path = os.path.join(folder_path, pdf_file)
             last_modified_date = datetime.fromtimestamp(os.path.getmtime(file_path)).date()
@@ -158,20 +159,18 @@ class PDFSearchApp(QMainWindow):
             if not self.toggle_date_button.isChecked() or (self.toggle_date_button.isChecked() and start_date <= last_modified_date <= end_date):
                 occurrences, count = extract_text_from_local_pdf(file_path, keyword)
                 if count >= 1:
-                    c += 1
-
-                    #self.result_textbox.append(f"File: {pdf_file}, Count: {count}, Page Numbers: {occurrences}
-        self.result_textbox.append(f"Out of {files_read} files, {c} files  contain the keyword.")
+                    c+=1
+                    #self.result_textbox.append(f"File: {pdf_file}, Count: {count}, Page Numbers: {occurrences}")
+        self.result_textbox.append(f"Out of {files_read} files, {c} files contain the keyword.")
         self.result_textbox.repaint()
         QApplication.processEvents()
 
         self.result_textbox.append("\nSearch complete.")
         QMessageBox.information(self, "Search Results",
-                                f"{files_read} files read \n{c} files  contain the keyword.\nExcel file saved at:\n{excel_path}")
-
+                                f"{files_read} files read \n{c} files contain the keyword.\nExcel file saved at:\n{excel_path}")
 
     def toggle_date_visibility(self, checked):
-            self.date_widget.setVisible(checked)
+        self.date_widget.setVisible(checked)
 
 
 def extract_text_from_local_pdf(file_path, target_word):
@@ -234,7 +233,6 @@ def process_local_pdf_files(folder_path, keyword, start_date, end_date):
         results_df.to_excel(writer, sheet_name='Sheet1', startrow=3, startcol=0, index=False)
 
     return results_df, len(pdf_files), results_excel_path
-
 
 
 if __name__ == '__main__':
